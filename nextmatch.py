@@ -7,9 +7,13 @@ dotenv_path = './.env'
 load_dotenv(dotenv_path=dotenv_path)
 # Fetch the RapidAPI key from the .env file
 rapidapi_key = os.getenv("RAPID_API_KEY")
+your_team_id = os.getenv("YOUR_TEAM_ID")
 
-url = "https://footapi7.p.rapidapi.com/api/team/44/matches/near"
 
+url = "https://footapi7.p.rapidapi.com/api/team/"+your_team_id+"/matches/near"
+
+print(url)
+exit()
 headers = {
 	"X-RapidAPI-Key": rapidapi_key,
 	"X-RapidAPI-Host": "footapi7.p.rapidapi.com"
