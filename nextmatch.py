@@ -12,8 +12,6 @@ your_team_id = os.getenv("YOUR_TEAM_ID")
 
 url = "https://footapi7.p.rapidapi.com/api/team/"+your_team_id+"/matches/near"
 
-print(url)
-exit()
 headers = {
 	"X-RapidAPI-Key": rapidapi_key,
 	"X-RapidAPI-Host": "footapi7.p.rapidapi.com"
