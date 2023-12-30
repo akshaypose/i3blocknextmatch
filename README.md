@@ -12,7 +12,7 @@ A custom block to get the next match opposition and match time for your football
 
 ## Installation
 1. Clone this git repo.
-2. Replace your RAPID_API_KEY & YOUR_TEAM_ID in the .env file
+2. Replace your RAPID_API_KEY & YOUR_TEAM_ID in the script
 3. Add the below code to your i3blocks config.(/etc/i3blocks.conf)
 ```
 [nextmatch]
