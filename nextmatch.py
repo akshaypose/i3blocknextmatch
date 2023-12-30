@@ -1,13 +1,9 @@
 import requests
 from datetime import datetime, timedelta
-from dotenv import load_dotenv
-import os
 
-dotenv_path = './.env'
-load_dotenv(dotenv_path=dotenv_path)
 # Fetch the RapidAPI key from the .env file
-rapidapi_key = os.getenv("RAPID_API_KEY")
-your_team_id = os.getenv("YOUR_TEAM_ID")
+rapidapi_key = YOUR_RAPID_API_KEY
+your_team_id = YOUR_TEAM_ID
 
 
 url = "https://footapi7.p.rapidapi.com/api/team/"+your_team_id+"/matches/near"
